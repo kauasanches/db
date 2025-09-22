@@ -7,19 +7,19 @@ include "conexao.php"; // inclui o arquivo de conexão
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style-form.css">
+    <link rel="stylesheet" href="./styles/style-for.css">
     <title>Formulário</title>
 </head>
 <body>
     <div class="container">
 
         <div class="container-form">
-            <form>
+            <form class="form-container">
     
-                <h1>Login</h1>
-                <input type="text">
-                <input type="password">
-                <input type="email">
+                <h1 class="titulo-form">Formulário</h1>
+                <input type="text" placeholder="Nome">
+                <input type="password" placeholder="Senha">
+                <input type="email" placeholder="Email">
     
                 <button type="submit" class="btn-submit">
                     Enviar
