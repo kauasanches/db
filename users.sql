@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16/09/2025 às 17:13
+-- Tempo de geração: 23/09/2025 às 16:32
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -40,7 +40,25 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `nome`, `senha`, `email`) VALUES
 (1, 'Kaua', '1234', 'kaua@gmail.com'),
-(2, 'Kauan', '4321', 'kauan@gmail.com');
+(2, 'Kauan', '4321', 'kauan@gmail.com'),
+(5, 'João Silva', 'senha123', 'joao.silva@example.com'),
+(6, 'Maria Oliveira', 'senha456', 'maria.oliveira@example.com'),
+(7, 'Pedro Santos', 'senha789', 'pedro.santos@example.com'),
+(8, 'Ana Costa', 'senha321', 'ana.costa@gmail.com'),
+(9, 'Lucas Pereira', 'senha654', 'lucas.pereira@gmail.com'),
+(10, 'Juliana Almeida', 'senha987', 'juliana.almeida@gmail.com'),
+(11, 'Carlos Souza', 'senha654', 'carlos.souza@gmail.com'),
+(12, 'Fernanda Lima', 'senha135', 'fernanda.lima@gmail.com'),
+(13, 'Gabriel Rocha', 'senha246', 'gabriel.rocha@gmail.com'),
+(14, 'Patricia Martins', 'senha369', 'patricia.martins@gmail.com'),
+(15, 'Ricardo Oliveira', 'senha258', 'ricardo.oliveira@gmail.com'),
+(16, 'Isabela Ramos', 'senha369', 'isabela.ramos@gmail.com'),
+(17, 'Thiago Silva', 'senha147', 'thiago.silva@gmail.com'),
+(18, 'Camila Santos', 'senha258', 'camila.santos@gmail.com'),
+(19, 'Raul Ferreira', 'senha369', 'raul.ferreira@gmail.com'),
+(20, 'Luana Costa', 'senha741', 'luana.costa@gmail.com'),
+(21, 'Vitor Pereira', 'senha852', 'vitor.pereira@gmail.com'),
+(22, 'Sofia Martins', 'senha963', 'sofia.martins@gmail.com');
 
 --
 -- Índices para tabelas despejadas
@@ -60,7 +78,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de tabela `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
