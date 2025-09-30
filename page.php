@@ -12,6 +12,13 @@ include "conexao.php"; // inclui o arquivo de conexão
 </head>
 <body>
     <div class="container">
+                
+        <div class="cabecalho">
+            <a href="page.php">Página</a>
+            <a href="mural.php">Mural</a>
+            <a href="moderar.php">Moderar</a>
+        </div>
+
 
         <div class="container-form">
             <form class="form-container">
