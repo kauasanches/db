@@ -75,8 +75,8 @@ if(mysqli_num_rows($seleciona) <= 0){
     while($res = mysqli_fetch_assoc($seleciona)){
         echo '<ul class="recados">';
         echo '<li><strong>ID:</strong> ' . $res['id'] . ' | 
-              <a href="moderar.php?acao=excluir&id=' . $res['id'] . '" class="edit-remove">Remover</a> | 
-              <a href="moderar.php?acao=editar&id=' . $res['id'] . '" class="edit-modify">Modificar</a></li>';
+              <a href="moderar.php?acao=excluir&id=' . $res['id'] . '" class="edit-remove">Excluir</a> | 
+              <a href="moderar.php?acao=editar&id=' . $res['id'] . '" class="edit-modify">Editar</a></li>';
         echo '<li><strong>Nome:</strong> ' . htmlspecialchars($res['nome']) . '</li>';
         echo '<li><strong>Email:</strong> ' . htmlspecialchars($res['email']) . '</li>';
         echo '<li><strong>Mensagem:</strong> ' . nl2br(htmlspecialchars($res['mensagem'])) . '</li>';
