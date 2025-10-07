@@ -35,7 +35,7 @@ if($editar_id){
 <head>
 <meta charset="utf-8"/>
 <title>Moderar pedidos</title>
-<link rel="stylesheet" href="./styles/style-for.css"/>
+<link rel="stylesheet" href="./styles/style-form.css"/>
 </head>
 <body>
 <div id="main">
@@ -53,17 +53,17 @@ if($editar_id){
 
 <?php if($recado_editar): ?>
 <div id="formulario_mural">
-<form method="post">
-    <h2>Editar informações</h2>
-    <label>Nome:</label>
-    <input type="text" name="nome" value="<?php echo htmlspecialchars($recado_editar['nome']); ?>"/><br/>
-    <label>Email:</label>
-    <input type="text" name="email" value="<?php echo htmlspecialchars($recado_editar['email']); ?>"/><br/>
-    <label>Mensagem:</label>
-    <textarea name="mensagem"><?php echo htmlspecialchars($recado_editar['mensagem']); ?></textarea><br/>
-    <input type="hidden" name="id" value="<?php echo $recado_editar['id']; ?>"/>
-    <input type="submit" name="atualiza" value="Modificar Recado" class="btn-submit"/>
-</form>
+    <form method="post">
+        <h2>Editar informações</h2>
+        <label>Nome:</label>
+        <input type="text" name="nome" value="<?php echo htmlspecialchars($recado_editar['nome']); ?>"/><br/>
+        <label>Email:</label>
+        <input type="text" name="email" value="<?php echo htmlspecialchars($recado_editar['email']); ?>"/><br/>
+        <label>Mensagem:</label>
+        <textarea name="mensagem"><?php echo htmlspecialchars($recado_editar['mensagem']); ?></textarea><br/>
+        <input type="hidden" name="id" value="<?php echo $recado_editar['id']; ?>"/>
+        <input type="submit" name="atualiza" value="Modificar Recado" class="btn-submit"/>
+    </form>
 </div>
 <?php endif; ?>
 
