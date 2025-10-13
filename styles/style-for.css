@@ -89,10 +89,18 @@ body {
 
 .cabecalho a:hover {
     text-decoration: underline;
+    color: red;
 }
 
-.formulario_mural {
+.formulario_mural, #formulario_mural {
     margin: 15px;
+
+    & input {
+        padding: 5px;
+        border-radius: 5px;
+        margin: 5px;
+        
+    }
 }
 
 .edit-remove {
@@ -101,7 +109,7 @@ body {
 }
 
 .edit-modify {
-    color: green;
+    color: rgb(10, 189, 10);
     text-decoration: none;
 }
 
@@ -111,4 +119,12 @@ body {
 
 .recados-form {
     margin: 10px;
+}
+
+.recados {
+    margin: 15px 10px;
+
+    & strong {
+        color: rgb(131, 131, 131);
+    }
 }

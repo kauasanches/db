@@ -35,7 +35,7 @@ if($editar_id){
 <head>
 <meta charset="utf-8"/>
 <title>Moderar pedidos</title>
-<link rel="stylesheet" href="./styles/style-form.css"/>
+<link rel="stylesheet" href="./styles/style-for.css"/>
 </head>
 <body>
 <div id="main">
