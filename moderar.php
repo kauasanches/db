@@ -7,7 +7,6 @@ if(isset($_POST['atualiza'])){
     $nome       = mysqli_real_escape_string($conexao, $_POST['nome']);
     $email      = mysqli_real_escape_string($conexao, $_POST['email']);
     $mensagem        = mysqli_real_escape_string($conexao, $_POST['mensagem']);
-
     $sql = "UPDATE recados SET nome='$nome', email='$email', mensagem='$mensagem' WHERE id=$idatualiza";
     mysqli_query($conexao, $sql) or die("Erro ao atualizar: " . mysqli_error($conexao));
     header("Location: moderar.php");
