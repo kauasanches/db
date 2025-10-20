@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url("https://img.freepik.com/vetores-gratis/desenho-de-fundo-de-estilo-de-gradiente-minimalista-de-luxo_698780-700.jpg") no-repeat center center fixed;
+    background: url('./img/background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
 }

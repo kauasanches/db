@@ -60,7 +60,7 @@ if(isset($_POST['cadastra'])){
                     <input type="text" name="email"/><br/>
                     <label>Mensagem:</label>
                     <textarea name="mensagem"></textarea><br/>
-                    <input type="submit" value="Publicar no Mural" name="cadastra" class="btn-submit"/>
+                    <input type="submit" value="Publicar no Mural" class="btn-submit"/>
                 </form>
             </div>
 
