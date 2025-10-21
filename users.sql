@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23/09/2025 às 16:32
+-- Tempo de geração: 21/10/2025 às 16:23
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -41,9 +41,9 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `nome`, `senha`, `email`) VALUES
 (1, 'Kaua', '1234', 'kaua@gmail.com'),
 (2, 'Kauan', '4321', 'kauan@gmail.com'),
-(5, 'João Silva', 'senha123', 'joao.silva@example.com'),
-(6, 'Maria Oliveira', 'senha456', 'maria.oliveira@example.com'),
-(7, 'Pedro Santos', 'senha789', 'pedro.santos@example.com'),
+(5, 'João Silva', 'senha123', 'joao.silva@gmail.com'),
+(6, 'Maria Oliveira', 'senha456', 'maria.oliveira@gmail.com'),
+(7, 'Pedro Santos', 'senha789', 'pedro.santos@gmail.com'),
 (8, 'Ana Costa', 'senha321', 'ana.costa@gmail.com'),
 (9, 'Lucas Pereira', 'senha654', 'lucas.pereira@gmail.com'),
 (10, 'Juliana Almeida', 'senha987', 'juliana.almeida@gmail.com'),
