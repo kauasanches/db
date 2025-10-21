@@ -8,54 +8,75 @@
 }
 
 body {
-    background: url('./img/background.jpg') no-repeat center center fixed;
+    background: url('../img/fundo-de-textura-de-tinta-marmorizada-liquida-pintura-fluida-textura-abstrata-mistura-de-cores-intensas-papel-de-parede.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
 
-.container-form form {
+.container-form {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
-
-    & input {
-        padding: 5px;
-        border-radius: 5px;
-        border: none;
-        border: solid 2px red;
-        margin: 5px;
-    }
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.container-form form h1 {
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-container .titulo-form {
     text-align: center;
-    color: red;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    font-weight: 600;
 }
 
-.btn-submit {
-    width: 150px;
-    border-radius: 5px;
+.form-container input {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.form-container input::placeholder {
+    color: #eee;
+}
+
+.form-container .btn-submit {
+    padding: 12px;
+    border-radius: 8px;
     border: none;
-    border: 2px solid red;
-    padding: 5px;
-    margin: 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
-    cursor: pointer;
-    background-color: red;
-    color: white;
-    border: 2px solid white;
-    box-shadow: 0px 0px 10px gray;
-    transform: scale(1.1);
-    transition: .2s ease-in;
+    background-color: darkred;
 }
-
-
-
-/* Parte do mural */
 
 #formulario_mural {
     display: flex;
@@ -76,8 +97,6 @@ body {
     margin: 10px;
     padding: 5px;
 }
-
-/* Parte do moderador */
 
 .cabecalho {
     text-align: center;
