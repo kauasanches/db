@@ -30,56 +30,55 @@ if(isset($_POST['cadastra'])){
                     mensagem: { required: true, minlength: 10 }
                 },
                 messages: {
-                    nome: { required: "Digite o seu nome", minlength: "O nome deve ter no mínimo 4 caracteres" },
-                    email: { required: "Digite o seu e-mail", email: "Digite um e-mail válido" },
-                    mensagem: { required: "Digite sua mensagem", minlength: "A mensagem deve ter no mínimo 10 caracteres" }
+                    nome: { required: "  Digite o seu nome", minlength: "  O nome deve ter no mínimo 4 caracteres" },
+                    email: { required: "  Digite o seu e-mail", email: "  Digite um e-mail válido" },
+                    mensagem: { required: "  Digite sua mensagem", minlength: "  A mensagem deve ter no mínimo 10 caracteres" }
                 }
             });
         });
     </script>
 </head>
 <body>
-    <div id="main">
-        <div id="geral">
+    <div class="container-geral">
+        <div id="main">
+            <div id="geral">
+                
+                <div class="cabecalho">
+                    <a href="page.php">Página</a>
+                    <a href="mural.php">Mural</a>
+                    <a href="moderar.php">Moderar</a>
+                </div>
+    
+                
+                <div class="mural-container">
+                    <div id="container-mural">
+                        <div id="header">
+                            <h1>Mural de pedidos</h1>
+                        </div>
+                        <div id="formulario_mural">
+                            <form id="mural" method="post">
+                                <input class="name" type="text" name="nome" placeholder="Nome:"/><br>
+                                <input class="email" type="text" name="email" placeholder="Email:"/><br>
+                                <textarea class="msg" name="mensagem" placeholder="Mensagem:"></textarea><br>
+                                <input class="btn-submit2" type="submit" value="Publicar no Mural"/>
+                            </form>
+                        </div>
             
-            <div class="cabecalho">
-                <a href="page.php">Página</a>
-                <a href="mural.php">Mural</a>
-                <a href="moderar.php">Moderar</a>
-            </div>
-
-            <div id="header">
-                <h1>Mural de pedidos</h1>
-            </div>
-
-            <div id="formulario_mural">
-                <form id="mural" method="post">
-                    <label>Nome:</label>
-                    <input type="text" name="nome"/><br/>
-                    <label>Email:</label>
-                    <input type="text" name="email"/><br/>
-                    <label>Mensagem:</label>
-                    <textarea name="mensagem"></textarea><br/>
-                    <input type="submit" value="Publicar no Mural" class="btn-submit"/>
-                </form>
-            </div>
-
-            <?php
-            $seleciona = mysqli_query($conexao, "SELECT * FROM recados ORDER BY id DESC");
-            while($res = mysqli_fetch_assoc($seleciona)){
-                echo '<div class="recados-form">';
-                echo '<ul class="recados">';
-                echo '<li><strong>ID:</strong> ' . $res['id'] . '</li>';
-                echo '<li><strong>Nome:</strong> ' . htmlspecialchars($res['nome']) . '</li>';
-                echo '<li><strong>Email:</strong> ' . htmlspecialchars($res['email']) . '</li>';
-                echo '<li><strong>Mensagem:</strong> ' . nl2br(htmlspecialchars($res['mensagem'])) . '</li>';
-                echo '</ul>';
-                echo '</div>';
-            }
-            ?>
-
-            <div id="footer">
-
+                        <?php
+                        $seleciona = mysqli_query($conexao, "SELECT * FROM recados ORDER BY id DESC");
+                        while($res = mysqli_fetch_assoc($seleciona)){
+                            echo '<div class="recados-form">';
+                            echo '<ul class="recados">';
+                            echo '<li><strong>ID:</strong> ' . $res['id'] . '</li>';
+                            echo '<li><strong>Nome:</strong> ' . htmlspecialchars($res['nome']) . '</li>';
+                            echo '<li><strong>Email:</strong> ' . htmlspecialchars($res['email']) . '</li>';
+                            echo '<li><strong>Mensagem:</strong> ' . nl2br(htmlspecialchars($res['mensagem'])) . '</li>';
+                            echo '</ul>';
+                            echo '</div>';
+                        }
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

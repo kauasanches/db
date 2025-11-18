@@ -13,11 +13,18 @@ body {
     color: white;
 }
 
-.container-form {
+.container-geral {
+    background: url('../img/fundo-de-textura-de-tinta-marmorizada-liquida-pintura-fluida-textura-abstrata-mistura-de-cores-intensas-papel-de-parede.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+}
+
+.container-form, .mural-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -25,6 +32,20 @@ body {
 .form-container {
     width: 100%;
     max-width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#container-mural {
+    width: 100%;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
@@ -58,6 +79,24 @@ body {
     transition: border 0.3s;
 }
 
+#formulario_mural .name, .email, .msg {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3 );
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.msg {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
 .form-container input::placeholder {
     color: #eee;
 }
@@ -78,10 +117,29 @@ body {
     background-color: darkred;
 }
 
+.btn-submit2 {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn-submit2:hover {
+    background-color: darkred;
+    box-shadow: 0px 0px 10px black;
+}
+
 #formulario_mural {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
 }
 
 #header h1 {
@@ -91,7 +149,7 @@ body {
     font-size: 42px;
 }
 
-#mural input, textarea {
+#mura input, textarea {
     border: none;
     border-radius: 5px;
     margin: 10px;
@@ -99,10 +157,10 @@ body {
 }
 
 .cabecalho {
-    text-align: center;
     display: flex;
     justify-content: space-around;
-    margin: 10px;
+    text-align: center;
+    padding: 15px;
 }
 
 .cabecalho a {
@@ -113,17 +171,6 @@ body {
 .cabecalho a:hover {
     text-decoration: underline;
     color: red;
-}
-
-.formulario_mural, #formulario_mural {
-    margin: 15px;
-
-    & input {
-        padding: 5px;
-        border-radius: 5px;
-        margin: 5px;
-        
-    }
 }
 
 .edit-remove {
@@ -141,7 +188,18 @@ body {
 }
 
 .recados-form {
-    margin: 10px;
+    width: 100%;
+    margin: 0 10px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .recados {
@@ -150,4 +208,8 @@ body {
     & strong {
         color: rgb(131, 131, 131);
     }
+}
+
+#container-mural {
+    margin: 35px;
 }
